@@ -1,4 +1,4 @@
-## Access the site here: https://kinlacheeny.github.io/web-scraping-challenge/
+
 
 #### JB Kinlacheeny - Homework 12 - Due: February 1, 2021
 
