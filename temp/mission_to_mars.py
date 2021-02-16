@@ -107,7 +107,7 @@ def scrape_mars_info():
         hemi_urls.append(hemi)
         browser.back()
 
-    mars_dict = {
+    data = {
         "news_title": news_title,
         "news_p": news_p,
         "featured_image_url": featured_image_url,
@@ -117,7 +117,8 @@ def scrape_mars_info():
 
     browser.quit()
 
-    return mars_dict
+    return data
+    
 
 
 

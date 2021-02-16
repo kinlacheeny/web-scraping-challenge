@@ -22,25 +22,25 @@
     <div class="row">
       <div class="col-md-12 col-md-offset-1">
         <h3>Latest Mars News</h3>
-        <h4>{{mars_dict.news_title}}</h4>
-        <p>{{mars_dict.news_p}}</p>
+        <h4>{{mars.news_title}}</h4>
+        <p>{{mars.news_p}}</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-6 col-md-offset-1">
         <h3>Featured Mars Image</h3>
-        <img src={{mars_data.featured_image_url}} class="img-responsive img-rounded" alt="Mars Image">
+        <img src={{mars.featured_image_url}} class="img-responsive img-rounded" alt="Mars Image">
       </div>
       <div class="col-md-3">
         <div class="panel panel-default">
           <div class="panel-body">
             <h3>Featured Mars Image</h3>
-            <h4>{mars.dict.featured_image_url}}</h4>
+            <h4>{mars.featured_image_url}}</h4>
           </div>
         </div>
         <div>
-          {{mars_dict.html_table | safe}}
+          {{mars.html_table | safe}}
         </div>
       </div>
     </div>
@@ -50,12 +50,12 @@
         <hr>
         <div class="col-md-10 col-md-offset-1">
             <div class="row">
-                {% for image in mars_dict.hemi_urls %}
+                {% for image in mars.hemi_urls %}
                 <div class="col-md-6">
                     <div class="card text-white bg-dark" style="margin: 30px; border: 2px solid rgb(70, 70, 70); padding: 5px; border-radius: 6px;">
-                        <img class="card-img-top img-responsive img-rounded" src="{{ image.img_url }}" />
+                        <img class="card-img-top img-responsive img-rounded" src="{{ image.img }}" />
                         <div class="card-body">
-                            <p class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: rgb(34, 34, 34);">{{ image.img_title }}</p>
+                            <p class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: rgb(34, 34, 34);">{{ image.title }}</p>
                         </div>
                     </div>
                 </div>

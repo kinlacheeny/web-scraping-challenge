@@ -20,7 +20,7 @@ def scrape():
    mars = mongo.db.mars
    mars_data = mission_to_mars.scrape_mars_info()
    mars.update({}, mars_data, upsert=True)
-   return "Scraping successful!"
+   return redirect("/", code=302)
 
 if __name__ == "__main__":
    app.run()    
